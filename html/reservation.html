@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION START -->
+    <header>
+      <span class="image-clickable">
+        <a href="home.html">
+          <img
+            class="logo"
+            src="../asset/logo/logo.jpg"
+            alt="Bandar Djakarta Logo"
+          />
+        </a>
+      </span>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a class="active" href="reservation.html">Reservation</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="promo.html">Promo</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- NAVBAR SECTION END -->
+
+    <!-- CONTENT SECTION END -->
+    <div class="title-menu">
+        <h1>Reservation Form</h2>
+    </div>
+    <div class="form-container">
+        <form>
+            <div class="elem-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+            </div>
+            <div class="elem-group">
+              <label for="phone">Nomor Telepon</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="083295680431"required>
+            </div>
+            <div class="elem-group">
+              <label for="adult">Jumlah Tamu</label>
+              <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            </div>
+            <div class="elem-group">
+              <label for="checkin-date">Tanggal Reservasi</label>
+              <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <div class="elem-group">
+                <label for="checkin-time">Waktu Reservasi</label>
+                <input type="time" id="checkin-time" name="checkin-time" required>
+              </div>
+            <hr>
+            <div class="elem-group">
+              <label for="message">Notes</label>
+              <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+            </div>
+            <div class="button-container">
+                <button class ="buttonsubmit" type="submit">Submit</button>
+                <button class ="buttoncancel" type="reset">Cancel</button>
+            </div>
+          </form>
+    </div>
+    <!-- CONTENT SECTION END -->
+
+    <!-- FOOTER SECTION END -->
+    <footer>
+        <p>Kelompok X - Kelas 2023©</p>
+    </footer>
+    <!-- FOOTER SECTION END -->
+  </body>
+</html>
